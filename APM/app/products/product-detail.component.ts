@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IProduct } from './product';
+import { ActivatedRoute} from '@angular/router';
 
 @Component({
 
@@ -9,4 +10,8 @@ import { IProduct } from './product';
 export class ProductDetailComponent{
     public pageTitle: string = 'Product Detail';
     product: IProduct;
+
+    constructor(private _route: ActivatedRoute) {
+
+    }
 }
